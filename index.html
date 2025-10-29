@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Gopika's Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet">
+
+  <style>
+    /* About Section Styling */
+    #about {
+      padding: 80px 20px;
+      text-align: center;
+      background-color: #f8f9fa; /* light gray background */
+    }
+
+    #about h2 {
+      font-size: 2.5rem;
+      font-weight: 600;
+      margin-bottom: 40px;
+      color: #212529;
+    }
+
+    #about img {
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #0d6efd; /* Bootstrap primary blue border */
+      margin-bottom: 25px;
+    }
+
+    #about .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      color: #495057;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 576px) {
+      #about h2 {
+        font-size: 2rem;
+      }
+
+      #about img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+  
+    /* Custom pink button for icons */
+    .btn-pink {
+      background-color: #e83e8c;
+      border: none;
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .btn-pink:hover {
+      background-color: #d63384;
+      transform: translateY(-3px);
+    }
+
+    #contact img {
+      object-fit: contain;
+    }
+
+    @media (max-width: 576px) {
+      #contact h2 {
+        font-size: 2rem;
+      }
+
+      #contact .btn-pink {
+        padding: 0.7rem;
+      }
+    }
+  
+       /* ===== Smooth Scroll & Navbar Styling ===== */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    padding-top: 60px; /* Prevents navbar from covering content */
+  }
+
+  .navbar-nav .nav-link {
+    color: #f8f9fa;
+    margin-left: 15px;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #3465cf; /* pink accent on hover */
+  }
+
+  .navbar-brand {
+    color: #f8f9fa !important;
+    font-size: 1.4rem;
+  }
+
+  .navbar {
+    background-color: #212529 !important; /* dark theme */
+  }
+
+  @media (max-width: 576px) {
+    .navbar-nav .nav-link {
+      margin-left: 0;
+      text-align: center;
+      padding: 10px 0;
+    }
+  }
+
+  </style>
+</head>
+<body>
+
+  <!-- ====== About Section ====== -->
+  <section id = "about" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <img src="images/about/about.png" alt="Profile Picture">
+      <div class="about-text">
+        <p>
+          Hello! I’m Gopika — a Data Scientist passionate about transforming data into meaningful insights. 
+          I enjoy exploring the intersection of data, analytics, and technology to build solutions that make an impact.
+        </p>
+        <p>
+          With a background in software development and analytics, I bring both technical expertise and creativity to my projects. 
+          I love learning new tools, telling stories with data, and sharing my journey through this portfolio.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== Projects Section ====== -->
+  <section id = "projects" id="projects" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-5">Projects</h2>
+      <div class="row justify-content-center">
+
+        <!-- Project 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Customer Churn Analysis">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Customer Churn Analysis</h5>
+              <p class="card-text flex-grow-1">
+                Using pandas to identify the factors that led to cancellation of customer subscriptions at a music store. Data driven results showed that customers who signed up for discounts were more likely to cancel and that the pop music enthusiasts were loyal customers of the music service.
+              </p>
+              <div>
+                <!-- <a href="#" class="btn btn-primary btn-sm me-2">Blog Post</a> -->
+                <a href="https://github.com/gopikakeshav/Customer-Churn-Analysis" target="_blank" class="btn btn-primary btn-sm me-2">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="MLB Player Analysis">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">MLB Player Analysis</h5>
+              <p class="card-text flex-grow-1">
+                Employing MySQL to understand the evolving changes in MLB player stats and team composition. Using Window functions, CTEs and subqueries to find that University of Texas produced the most players, more than 25 players started and ended their careers in the same team.
+              </p>
+              <div>
+                <!-- <a href="#" class="btn btn-primary btn-sm me-2">Blog Post</a> -->
+                <a href="https://github.com/gopikakeshav/MLB-Player-Analysis" target="_blank" class="btn btn-primary btn-sm me-2">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Sales Analysis">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Sales Analysis</h5>
+              <p class="card-text flex-grow-1">
+                Using Tableau to analyse the company’s business performance over 3 years, detailing the sales, profit and order quantities by different geographical locations. With interactive filters and YoY comparison it is easier to spot the growth and decline in sales and thereby take corrective action.
+              </p>
+              <div>
+                <!-- <a href="#" class="btn btn-primary btn-sm me-2">Blog Post</a> -->
+                <a href="https://public.tableau.com/app/profile/gopika.muthukesavaraj/viz/GlobalElectronicsRetailer_17551808555280/Main" target="_blank" class="btn btn-primary btn-sm me-2">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ====== Skills Section ====== -->
+  <section id = "skills" id="skills" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-5">Skills</h2>
+      <div class="row justify-content-center">
+
+        <!-- Skill 1 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/skills/1.png" class="card-img-top p-4" alt="SQL Icon" style="height:100px; width:auto; object-fit:contain; margin:auto;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text flex-grow-1">
+                The most trusted tool in a Data ethusiast's toolkit - SQL, this is my go-to for all data blending needs. From CTEs and Views to Subqueries and window functions, it makes life easier when you are in the middle of deep dive analysis.
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/skills/2.png" class="card-img-top p-4" alt="Python Icon" style="height:100px; width:auto; object-fit:contain; margin:auto;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text flex-grow-1">
+                Python and its libraries come handy when I need to go beyond basic EDA. When going from descriptive to predictive analytics, Pandas, Numpy, Scikit and other libraries help unravel the story behind the data. 
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/skills/3.png" class="card-img-top p-4" alt="Data Visualization Icon" style="height:100px; width:auto; object-fit:contain; margin:auto;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text flex-grow-1">
+                Visualization is an essential step in understanding the data deeply. From Tableau to Matloplib and Seaborn, the power of visualization is not in the tool itself but in the insight it delivers to the readers. Simple line charts to stunning visuals, data visualization is both art and science.  
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-md-3 mb-4">
+          <div class="card h-100 shadow-sm border-0">
+            <img src="images/skills/4.png" class="card-img-top p-4" alt="AI" style="height:100px; width:auto; object-fit:contain; margin:auto;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">AI</h5>
+              <p class="card-text flex-grow-1">
+                Going beyond ChatGPT and prompt engineering 
+              </p>
+              <a href="#" class="btn btn-outline-primary btn-sm mt-auto">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+ 
+    <!-- ====== Contact Me Section ====== -->
+  <section id = "contact" id="contact" class="py-5 text-center text-white" style="background-color: #212529;">
+    <div class="container">
+      <h2 class="mb-5">Contact Me</h2>
+
+      <!-- Contact Info -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-4 mb-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email Icon" width="30" class="me-2">
+            <p class="mb-0">gopikakeshav@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Phone Icon" width="28" class="me-2">
+            <p class="mb-0">+91 98765 43210</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="d-flex justify-content-center flex-wrap gap-3 mt-4">
+        <a href="https://www.linkedin.com/in/gopika-muthukesavaraj/" target="_blank" class="btn btn-black rounded-circle p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+          <img src="icons/linkedin.png" alt="LinkedIn" width="25" height="25">
+        </a>
+        <a href="https://www.kaggle.com/gopikakeshav" target="_blank" class="btn btn-black rounded-circle p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Kaggle">
+          <img src="icons/kaggle.png" alt="Kaggle" width="25" height="25">
+        </a>
+        <a href="https://github.com/gopikakeshav" target="_blank" class="btn btn-black rounded-circle p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+          <img src="icons/github.png" alt="GitHub" width="25" height="25">
+        </a>
+        <!--<a href="#" class="btn btn-pink rounded-circle p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Medium">
+          <img src="icons/medium.png" alt="Medium" width="25" height="25">
+        </a> -->
+        <a href="https://public.tableau.com/app/profile/gopika.muthukesavaraj/vizzes" target="_blank" class="btn btn-black rounded-circle p-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Tableau">
+          <img src="icons/tableau.png" alt="Tableau" width="25" height="25">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ====== Sticky Navigation Bar ====== -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Gopika Keshav</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
